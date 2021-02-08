@@ -78,7 +78,7 @@ form.addEventListener("click",()=>{
     let inp = document.querySelector(".input-box").value;
     if(inp !== null){
         get(inp);
-        inp.value = "";
+        inp.value == "";
     }
     
 });

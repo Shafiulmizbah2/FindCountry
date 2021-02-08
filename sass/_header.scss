@@ -13,7 +13,7 @@
         font-size: inherit;
         font-family: inherit;
         height: 4.5rem;
-        min-width: 30rem;
+        min-width: 18rem;
         width: 50rem;
         
         .input-box{
@@ -34,7 +34,17 @@
                 font-size: inherit;
                 color: rgba($gray,.7);
                 text-transform: capitalize;
+                @media only screen and (max-width:660px){
+                    font-size: 1.5rem;
+                }
             }
+            
+            @media only screen and (max-width:660px){
+                font-size: 1.5rem;
+                letter-spacing: .1rem;
+            }
+
+            
         }
 
         .btn{
@@ -64,6 +74,17 @@
             &:hover{
                 background-color: $colorful;
             }
+
+        }
+
+        @media only screen and (max-width:660px){
+            font-size: 2rem;
+            width: 35rem;
+        }
+
+        @media only screen and (max-width:440px){
+            font-size: 2rem;
+            width: 33rem;
         }
     }
 }

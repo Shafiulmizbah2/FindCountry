@@ -24,6 +24,18 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 660px) {
+  .heading-primary {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .heading-primary {
+    font-size: 1.4rem;
+  }
+}
+
 .header {
   min-height: 30vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.822)), to(rgba(0, 0, 0, 0.822))), url(../img/alflag.jpg);
@@ -50,7 +62,7 @@ body {
   font-size: inherit;
   font-family: inherit;
   height: 4.5rem;
-  min-width: 30rem;
+  min-width: 18rem;
   width: 50rem;
 }
 
@@ -73,6 +85,19 @@ body {
   font-size: inherit;
   color: rgba(85, 85, 85, 0.7);
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 660px) {
+  .header .form .input-box:placeholder-shown {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .header .form .input-box {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+  }
 }
 
 .header .form .btn {
@@ -111,6 +136,20 @@ body {
   background-color: #ff2b06;
 }
 
+@media only screen and (max-width: 660px) {
+  .header .form {
+    font-size: 2rem;
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .header .form {
+    font-size: 2rem;
+    width: 33rem;
+  }
+}
+
 .container {
   width: 100%;
   padding: 4vh 2vh;
@@ -141,6 +180,7 @@ body {
 .container .card .img-box {
   height: 40%;
   width: 100%;
+  background-color: #f1eeee;
   overflow: hidden;
 }
 
@@ -185,5 +225,23 @@ body {
   width: 2rem;
   fill: #026818;
   margin-right: 1rem;
+}
+
+footer {
+  width: 100%;
+  padding: 2vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  color: rgba(241, 238, 238, 0.7);
 }
 /*# sourceMappingURL=main.css.map */

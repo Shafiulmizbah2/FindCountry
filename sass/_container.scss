@@ -18,6 +18,7 @@
         .img-box{
             height: 40%;
             width: 100%;
+            background-color: $font;
             overflow: hidden;
 
             img{
@@ -51,5 +52,17 @@
 
             }
         }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 2vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        color: rgba($font,.7);
     }
 }
