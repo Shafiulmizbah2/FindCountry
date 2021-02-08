@@ -1,0 +1,69 @@
+.header{
+    min-height: 30vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.822)) ,url(../img/alflag.jpg);
+    background-position: center;
+    padding: 2vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .form{
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        height: 4.5rem;
+        min-width: 30rem;
+        width: 50rem;
+        
+        .input-box{
+            height: 100%;
+            padding: 1rem 2rem;
+            width: 100%;
+            border-radius: 100px;
+            outline: none;
+            border: none;
+            font-size: 1.7rem;
+            font-family: inherit;
+            color: $gray;
+            margin-top: 3vh;
+            letter-spacing: .2rem;
+
+            &:placeholder-shown{
+                font-size: inherit;
+                font-size: inherit;
+                color: rgba($gray,.7);
+                text-transform: capitalize;
+            }
+        }
+
+        .btn{
+            text-decoration: none;
+            height: 4.5rem;
+            width: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 3vh;
+            border-radius: 100px;
+            outline: none;
+            border: none;
+            font-size: 2rem;
+            font-family: inherit;
+            letter-spacing: .2rem;
+            font-weight: $normal;
+            background-color: rgba($colorful,.9);
+            text-align: center;
+            color: $font;
+            cursor: pointer;
+            transition: all .4s;
+
+            &:hover{
+                background-color: $colorful;
+            }
+        }
+    }
+}

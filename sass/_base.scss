@@ -1,0 +1,43 @@
+//////////////
+//Font weignt
+/////////////
+$bold:700;
+$thin:300;
+$normal:400;
+
+//////////////
+//Color
+/////////////
+
+$bgcolor: rgb(36, 35, 35);
+$font: rgb(241, 238, 238);
+$gray: #555;
+$white : #fff;
+$colorful : rgb(255, 43, 6);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Crimson Text', serif;
+}
+
+body{
+    font-weight: $normal;
+    font-size: 1.7rem;
+    background-color: $bgcolor;
+}
+
+.heading-primary{
+    font-size: 3.5rem;
+    font-weight: $thin;
+    color: $font;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+
+

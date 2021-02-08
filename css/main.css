@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Crimson Text', serif;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.7rem;
+  background-color: #242323;
+}
+
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #f1eeee;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+}
+
+.header {
+  min-height: 30vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.822)), to(rgba(0, 0, 0, 0.822))), url(../img/alflag.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.822)), url(../img/alflag.jpg);
+  background-position: center;
+  padding: 2vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .form {
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  height: 4.5rem;
+  min-width: 30rem;
+  width: 50rem;
+}
+
+.header .form .input-box {
+  height: 100%;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: #555;
+  margin-top: 3vh;
+  letter-spacing: .2rem;
+}
+
+.header .form .input-box:placeholder-shown {
+  font-size: inherit;
+  font-size: inherit;
+  color: rgba(85, 85, 85, 0.7);
+  text-transform: capitalize;
+}
+
+.header .form .btn {
+  text-decoration: none;
+  height: 4.5rem;
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 3vh;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-family: inherit;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  background-color: rgba(255, 43, 6, 0.9);
+  text-align: center;
+  color: #f1eeee;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.header .form .btn:hover {
+  background-color: #ff2b06;
+}
+
+.container {
+  width: 100%;
+  padding: 4vh 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .card {
+  width: 24rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-bottom: 2vh;
+}
+
+.container .card .img-box {
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .card .img-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .card .details-box {
+  height: 60%;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .card .details-box .list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.container .card .details-box .list .icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #026818;
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
