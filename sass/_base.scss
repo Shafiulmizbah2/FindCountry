@@ -9,7 +9,7 @@ $normal:400;
 //Color
 /////////////
 
-$bgcolor: rgb(36, 35, 35);
+$dark: rgb(5, 5, 5);
 $font: rgb(241, 238, 238);
 $gray: #555;
 $white : #fff;
@@ -29,7 +29,7 @@ html{
 body{
     font-weight: $normal;
     font-size: 1.7rem;
-    background-color: $bgcolor;
+    background-color: $dark;
 }
 
 .heading-primary{

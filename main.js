@@ -1,9 +1,7 @@
-
+const cont = document.querySelector(".container");
 const get = function(name){
 
     const showResult = async function(){
-        
-        const cont = document.querySelector(".container");
     
         //https://restcountries.eu/rest/v2/all
     
@@ -12,11 +10,10 @@ const get = function(name){
         const response = await fetch(`https://restcountries.eu/rest/v2/name/${name}`);
         const Data = await response.json();
 
-        if(!response.ok){
+        if(!response.ok){  //if ok property is false.
             alert("Check spelling or Internet connection!");
         }
         else{
-
             const details = {
                 flag : Data[0].flag,
                 name : Data[0].name,
@@ -98,4 +95,41 @@ window.addEventListener("keypress",(e)=>{
     }
 });
 
+const whereAmI = function(lat,lng){
+    fetch(`
+    https://geocode.xyz/${lat},${lng}?geoit=json
+    `).then(res => res.json())
+    .then(data => {
+        const aboutPlace = {
+            country : data.country,
+            city : data.city,
+            street : data.poi.addr_street
+        };
 
+        const addText = `
+        Country : ${aboutPlace.country}.
+        City : ${aboutPlace.city}.
+        Street : ${aboutPlace.street}.
+        `;
+        let para = document.querySelector(".para");
+        para.insertAdjacentText("afterbegin",addText);
+        document.querySelector(".location").style.backgroundColor = "#fff";
+    })
+    .catch(err=> alert("After click please wait for a while...try again!"));
+
+};
+
+let pos = document.querySelector(".btn-2");
+
+pos.addEventListener("click",()=>{
+    //getting lattitude & longitude value of your location.
+    navigator.geolocation.getCurrentPosition(function(position){
+        const {latitude:lat,longitude:lng} = position.coords;
+        //console.log(lat,lng);
+        document.querySelector(".para").innerHTML = "";
+        whereAmI(lat,lng);
+
+    },function(){
+        alert("Location no found!");
+    });
+});
